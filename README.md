@@ -8,6 +8,10 @@ The architecture combines the You Only Look Once (**YOLO**), Probabilistic Hough
 
 ---
 
+The first step in using the deep learning-based model for object detection is to reduce the dimensions of the drawings since the original projects have high resolution. This process is carried out using the sliding window method, the algorithm for which is presented here.
+
+---
+
 YOLO is used for object detection considering a custom dataset (symbols, labels, and specifiers) from relay-based railway interlocking systems. The explanation of how YOLO is employed is presented [here](https://github.com/SFStefenon/Digital_ED/tree/main/YOLO). To ensure that the best architecture setup is considered, hypertuning is used for model selection (YOLOv8n, YOLOv8s, YOLOv8m, YOLOv8l, and YOLOv8x) and hyperparameters tuning, as it explained here.
 
 , the PHT with DBSCAN is considered for segment detection, and the ruled-based methods apply considering the schematic rules of the drawings.
