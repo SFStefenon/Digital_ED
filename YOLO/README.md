@@ -148,15 +148,15 @@ If you need to perform a binary classification or use different inputs, it is po
 
 **OBS: Be careful with this algorithm since is going to change all your annotation. I recommend saving the output in a different path.**
 
-# Final comments
+# Final Comments
 
-For YOLOv8 you can compute a Python file to run the experiments.
+For YOLOv8 you can compute a Python file to run the experiments, using the SBATCH:
 
-''
+```
 #!/bin/bash
-#SBATCH --job-name=FINAL
-#SBATCH --output=./logs_ben/x_output_c_diffusion_optimized2.txt
-#SBATCH --error=./logs_ben/x_error_c_diffusion_optimized2.txt
+#SBATCH --job-name=YOLO_exp
+#SBATCH --output=YOLO_output.txt
+#SBATCH --error=YOLO_error.txt
 #SBATCH --partition=gpu-A40
 #SBATCH --gres=gpu:1
 #SBATCH --mem=64000
@@ -165,12 +165,12 @@ For YOLOv8 you can compute a Python file to run the experiments.
 eval "$(conda shell.bash hook)"
 cd ~/yolov8/
 conda activate yolo
-python run-yolov8_c_diffusion_optimized.py
-'''
+python run-yolov8.py
+```
+Then, the run-yolov8.py Python file would be:
 
 
-
-'''
+```
 import re
 import numpy as np
 from ultralytics import YOLO
@@ -196,7 +196,7 @@ for runs in range(0,10):
         end = time.time()
         time_s = end - start
         print(f'Time (s): {time_s} seconds')
-'''
+```
 
 
 ---
