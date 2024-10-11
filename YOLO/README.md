@@ -10,8 +10,6 @@ YOLO is an algorithm that detects and recognizes objects in pictures. YOLO emplo
 
 There are many variations of YOLO, some of the latest developed by [Ultralytics](https://github.com/ultralytics/ultralytics). In the latest version, the last letter refers to the size of the model (nano, small, median, large, and extra large). The published results shows that lager models may have better precision, and small models are faster. This trade off makes the variation of the size of the model became important depending on the application.
 
-# Compute YOLO in the Cluster
-
 ## Create the Environment
 
 The first step to compute YOLO in the cluster is to create the environment:
@@ -26,13 +24,13 @@ conda env list
 # Create a new environment
 conda create --name yolo-env python=3.9
 
-# Activate the environment to install packges
+# Activate the environment to install packages
 conda activate yolo-env
 
 # Install the requirements
 pip install ultralytics
 
-# If something goes wrong and you need to remove the environmen
+# If something goes wrong and you need to remove the environment
 conda env remove -n yolo-env
 ```
 
@@ -62,7 +60,7 @@ scp -r C:/Users/user/Desktop/dataset/ diclub:/home/sfrizzostefenon/dataset/
 
 ### Organize Your Dataset
 
-There are tree ways to organize your personalized dataset.
+There are three ways to organize your personalized dataset.
 
 The first way is using a different path for training and validation (works for YOLOv5 and YOLOv7).
 ```    
@@ -72,7 +70,7 @@ dataset/valid/images
 dataset/valid/labels
 ```
 
-The second way is using a different path for training and validation (works specially for YOLOv6).
+The second way is using a different path for training and validation (which works especially for YOLOv6).
 ```    
 dataset/images/train
 dataset/images/val
@@ -152,6 +150,53 @@ If you need to perform a binary classification or use different inputs, it is po
 
 # Final comments
 
+For YOLOv8 you can compute a Python file to run the experiments.
+
+''
+#!/bin/bash
+#SBATCH --job-name=FINAL
+#SBATCH --output=./logs_ben/x_output_c_diffusion_optimized2.txt
+#SBATCH --error=./logs_ben/x_error_c_diffusion_optimized2.txt
+#SBATCH --partition=gpu-A40
+#SBATCH --gres=gpu:1
+#SBATCH --mem=64000
+#SBATCH --cores-per-socket=4
+#SBATCH --nice=0
+eval "$(conda shell.bash hook)"
+cd ~/yolov8/
+conda activate yolo
+python run-yolov8_c_diffusion_optimized.py
+'''
+
+
+
+'''
+import re
+import numpy as np
+from ultralytics import YOLO
+import time
+import wandb
+import os
+
+wandb.init(project="RFI_Marco_Benchmarking_p2", name=f"EXP2_GAN2")
+
+# Specify the save directory for training runs
+name = '/storage/DSIP/gnn_ruled/yolo_results/Benchmarking_paper2/synthetic_GAN/Exp'
+dataset="../yolov8/ben/synthetic_GAN.yaml"
+
+for runs in range(0,10):
+        start = time.time()
+        # Load a model
+        model = YOLO("yolov8n.pt")  # load a pre-trained model (recommended for training)
+
+        # Use the model
+        model.train(data=dataset, seed=int(runs), epochs=300, patience=50, val=True, name=name)
+        metrics = model.val()  # evaluate model performance on the validation set
+
+        end = time.time()
+        time_s = end - start
+        print(f'Time (s): {time_s} seconds')
+'''
 
 
 ---
