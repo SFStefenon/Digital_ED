@@ -136,9 +136,9 @@ names: ['C00', 'C01', 'C02']
 
 ## RFI Project
 
-As the images of the engineering drawings are big, it is necessary to perform a cropout.
+As the images of the engineering drawings are big, it is necessary to perform a cropout based on a sliding window method.
 
-To be able to train the YOLO the cropouts need to be standardized, this can be done by [this algorithm](https://gitlab.fbk.eu/dsip/dsip_dlresearch/rfi_acc/-/blob/main/Algorithms/Build%20Dataset/Slide_Window_Crop_Out.py).
+To be able to train the YOLO, the cropouts need to be standardized, this can be done by [this algorithm](https://github.com/SFStefenon/Digital_EDs/blob/main/YOLO/Sliding%20Window/Sliding%20Window%20Compute.py).
 
 If you need to perform a binary classification or use different inputs, it is possible to change all classes based on a single run using [this algorithm](https://gitlab.fbk.eu/dsip/dsip_dlresearch/rfi_acc/-/blob/main/Algorithms/Build%20Dataset/Change_the_Classes_for_the_Input_of_YOLO.py).
 
