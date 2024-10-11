@@ -5,5 +5,6 @@ This repository presents a hybrid method as a complete solution for digitizing e
 The architecture combines 
 YOLO + PHT + DBSCAN + Ruled-based method
 
-![RFI2](https://github.com/user-attachments/assets/b0a88836-5b80-4e9d-be03-98f6163a660c)
+![RFI2](https://github.com/user-attachments/assets/0f2f44c1-3075-4fee-974e-97aedeb7e8f8)
+
 
