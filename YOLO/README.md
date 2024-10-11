@@ -167,7 +167,7 @@ cd ~/yolov8/
 conda activate yolo
 python run-yolov8.py
 ```
-Then, the run-yolov8.py Python file would be:
+Then, the $run-yolov8.py$ Python file would be:
 
 
 ```
