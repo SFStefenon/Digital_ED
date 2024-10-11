@@ -167,8 +167,7 @@ cd ~/yolov8/
 conda activate yolo
 python run-yolov8.py
 ```
-Then, the $run-yolov8.py$ Python file would be:
-
+Then, the `run-yolov8.py` Python file would be:
 
 ```
 import re
@@ -178,13 +177,14 @@ import time
 import wandb
 import os
 
-wandb.init(project="RFI_Marco_Benchmarking_p2", name=f"EXP2_GAN2")
+wandb.init(project="YOLO_project", name=f"EXP1")
 
 # Specify the save directory for training runs
-name = '/storage/DSIP/gnn_ruled/yolo_results/Benchmarking_paper2/synthetic_GAN/Exp'
-dataset="../yolov8/ben/synthetic_GAN.yaml"
+name = '/storage/yolo_results/'
+dataset="../yolov8/data.yaml"
 
-for runs in range(0,10):
+# To compute multiple experiments
+for runs in range(0,10): 
         start = time.time()
         # Load a model
         model = YOLO("yolov8n.pt")  # load a pre-trained model (recommended for training)
