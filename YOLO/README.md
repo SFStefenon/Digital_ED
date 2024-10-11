@@ -140,7 +140,7 @@ As the images of the engineering drawings are big, it is necessary to perform a 
 
 To be able to train the YOLO, the cropouts need to be standardized, this can be done by [this algorithm](https://github.com/SFStefenon/Digital_EDs/blob/main/YOLO/Sliding%20Window/Sliding%20Window%20Compute.py).
 
-If you need to perform a binary classification or use different inputs, it is possible to change all classes based on a single run using [this algorithm](https://gitlab.fbk.eu/dsip/dsip_dlresearch/rfi_acc/-/blob/main/Algorithms/Build%20Dataset/Change_the_Classes_for_the_Input_of_YOLO.py).
+If you need to perform a binary classification or use different inputs, it is possible to change all classes based on a single run using [this algorithm](https://github.com/SFStefenon/Digital_EDs/blob/main/YOLO/Changing%20Classes/Change_the_Classes_to_0.py).
 
 **OBS: Be careful with this algorithm since is going to change all your annotation. I recommend saving the output in a different path.**
 
