@@ -14,7 +14,7 @@ The first step in using the deep learning-based model for object detection is to
 
 YOLO is used for object detection considering a custom dataset (symbols, labels, and specifiers) from relay-based railway interlocking systems. The explanation of how YOLO is employed is presented [here](https://github.com/SFStefenon/Digital_ED/tree/main/YOLO). To ensure that the best architecture setup is considered, hypertuning is used for model selection (YOLOv8n, YOLOv8s, YOLOv8m, YOLOv8l, and YOLOv8x) and hyperparameters tuning.
 
-To perform the hyperparameters tuning of YOLO the Optuna using a tree-structured Parzen estimator is used. Since the analysis uses a deep learning-based model, the model will require a high processing time to be trained (considering the defined number of epochs) depending on your dataset. 
+To perform the hyperparameters tuning of YOLO the Optuna using a tree-structured Parzen estimator is used, an example of this computation is [here](https://github.com/SFStefenon/Digital_ED/blob/main/Optuna/yolov8-optuna-sd2.py). Since the analysis uses a deep learning-based model, the model will require a high processing time to be trained (considering the defined number of epochs) depending on your dataset. 
 
 ---
 
