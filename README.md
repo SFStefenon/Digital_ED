@@ -24,6 +24,9 @@ To compare the DBSCAN clustering, the KMeans, agglomerative clustering, and orde
 
 Considering the detected lines, orthogonal lines are merged and identifiers (ID) are used to label them. Using the IDs a graph is built to connect lines to symbols having a graph of the electrical connections. Based on the coordinates from YOLO and the electrical connections from the graph an output that can be read by [NORMA Tool](https://doi.org/10.1007/978-3-030-99524-9_7) is created. The algorithm that identifies the lines, aggregates the lines based on rules to create the graph and generates the readable output is [here](https://github.com/SFStefenon/Digital_ED/blob/main/PHT-DBSCAN/Line_Detection_Graph_Readable_Ouput.py).
 
+![method](https://github.com/user-attachments/assets/4c12d717-3ad1-44f8-80a5-e0edbb084e4c)
+
+
 ---
 
 Since the cropouts have 640 by 640 pixels, it is necessary to join the segments and define the position of the objects-based cropouts from the original image, this is done by this [algorithm](https://github.com/SFStefenon/Digital_ED/blob/main/Graph/Load_Complete_Graph_Full_Image_Annotations_and_Segments.py). The complete graph that combines all electrical connections is available [here](https://github.com/SFStefenon/Digital_ED/blob/main/Graph/Create_Complete_Graph_Full_Image_to_Save_Annotations_and_Segments.py).  
