@@ -19,6 +19,8 @@ To perform the hyperparameters tuning of YOLO the Optuna using a tree-structured
 ---
 
 For segment detection PHT is used, considering that the detected segments are dashed, DBSCAN is used for clustering the segments to create a continuous line.
+For PHT the preprocessing techniques canny edge detection, Sobel edge detection, binarization threshold, Otsu Riddler-Calvard threshold, or adaptive threshold can be used.
+To compare the DBSCAN clustering, the KMeans, agglomerative clustering, and ordering points to identify the clustering structure (OPTICS) can be considered.
 
 Considering the detected lines, orthogonal lines are merged and identifiers (ID) are used to label them. Using the IDs a graph is built to connect lines to symbols to have the graph of the electrical connections and letters are connected to letters to create a sequence.
 
