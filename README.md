@@ -22,7 +22,12 @@ For segment detection PHT is used, considering that the detected segments are da
 For PHT the preprocessing techniques canny edge detection, Sobel edge detection, binarization threshold, Otsu Riddler-Calvard threshold, or adaptive threshold can be used.
 To compare the DBSCAN clustering, the KMeans, agglomerative clustering, and ordering points to identify the clustering structure (OPTICS) can be considered.
 
-Considering the detected lines, orthogonal lines are merged and identifiers (ID) are used to label them. Using the IDs a graph is built to connect lines to symbols having a graph of the electrical connections. Based on the coordinates from YOLO and the electrical connections from the graph an output that can be read by [NORMA Tool](https://doi.org/10.1007/978-3-030-99524-9_7) is created. The algorithm that identifies the lines, aggregates the lines based on rules to create the graph, and generate the readable output is [here](https://github.com/SFStefenon/Digital_ED/blob/main/PHT-DBSCAN/Line_Detection_Graph_Readable_Ouput.py).
+Considering the detected lines, orthogonal lines are merged and identifiers (ID) are used to label them. Using the IDs a graph is built to connect lines to symbols having a graph of the electrical connections. Based on the coordinates from YOLO and the electrical connections from the graph an output that can be read by [NORMA Tool](https://doi.org/10.1007/978-3-030-99524-9_7) is created. The algorithm that identifies the lines, aggregates the lines based on rules to create the graph and generates the readable output is [here](https://github.com/SFStefenon/Digital_ED/blob/main/PHT-DBSCAN/Line_Detection_Graph_Readable_Ouput.py).
+
+---
+
+Since the cropouts have 640 by 640 pixels, it is necessary to join the segments and define the position of the objects-based cropouts from the original image. This is done by this [algorithm](https://github.com/SFStefenon/Digital_ED/blob/main/Graph/Load_Complete_Graph_Full_Image_Annotations_and_Segments.py).  
+
 
 ---
 
