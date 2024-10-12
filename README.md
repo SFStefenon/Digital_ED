@@ -22,7 +22,7 @@ For segment detection PHT is used, considering that the detected segments are da
 For PHT the preprocessing techniques canny edge detection, Sobel edge detection, binarization threshold, Otsu Riddler-Calvard threshold, or adaptive threshold can be used.
 To compare the DBSCAN clustering, the KMeans, agglomerative clustering, and ordering points to identify the clustering structure (OPTICS) can be considered.
 
-Considering the detected lines, orthogonal lines are merged and identifiers (ID) are used to label them. Using the IDs a graph is built to connect lines to symbols having a graph of the electrical connections. Based on the coordinates from YOLO and the electrical connections from the graph an output that can be read by NORMA Tool is created.
+Considering the detected lines, orthogonal lines are merged and identifiers (ID) are used to label them. Using the IDs a graph is built to connect lines to symbols having a graph of the electrical connections. Based on the coordinates from YOLO and the electrical connections from the graph an output that can be read by [NORMA Tool](https://doi.org/10.1007/978-3-030-99524-9_7) is created.
 
 
 
