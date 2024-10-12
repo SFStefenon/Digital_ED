@@ -26,6 +26,8 @@ Considering the detected lines, orthogonal lines are merged and identifiers (ID)
 
 ![image](https://github.com/user-attachments/assets/8b3ca5e4-b91b-4161-9482-cc561cb5e319)
 
+To perform a complete digitization of engineering drawings, white rectangles are initially drawn over the objects under consideration (symbols, labels, and specifiers), resulting in an image that only has the lines to be detected (without components). PHT is then applied to detect segments, and since this method detects small segments (dashed lines), DBSCAN is used to redraw the lines. Identifiers are assigned to each line and object, and based on geometric and design rules, a Graph is constructed as links from symbols to lines, and then symbols to symbols. The Graph of symbols is used to create a readable output for Norma, the graphical interface used to manage rail network projects.
+
 ---
 
 Since the cropouts have 640 by 640 pixels, it is necessary to join the segments and define the position of the objects-based cropouts from the original image, this is done by this [algorithm](https://github.com/SFStefenon/Digital_ED/blob/main/Graph/Load_Complete_Graph_Full_Image_Annotations_and_Segments.py). The complete graph that combines all electrical connections is available [here](https://github.com/SFStefenon/Digital_ED/blob/main/Graph/Create_Complete_Graph_Full_Image_to_Save_Annotations_and_Segments.py).  
