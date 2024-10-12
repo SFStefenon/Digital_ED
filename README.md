@@ -35,8 +35,8 @@ Since the cropouts have 640 by 640 pixels, it is necessary to join the segments 
 
 ---
 
-Wrote by **Stefano Frizzo Stefenon**
+Wrote by Dr. **Stefano Frizzo Stefenon**
 
 Fondazione Bruno Kessler
 
-Trento, Italy, June 06, 2024
+Trento, Italy, October 10, 2024
