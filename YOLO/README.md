@@ -197,8 +197,10 @@ for runs in range(0,10):
 
 ---
 
-Wrote by **Stefano Frizzo Stefenon**
+---
+
+Wrote by Dr. **Stefano Frizzo Stefenon**
 
 Fondazione Bruno Kessler
 
-Trento, Italy, June 06, 2024
+Trento, Italy, October 10, 2024
