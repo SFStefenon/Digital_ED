@@ -8,7 +8,7 @@ The architecture combines the You Only Look Once (**YOLO**), Probabilistic Hough
 
 ---
 
-The first step in using the deep learning-based models for object detection is to reduce the dimensions of the drawings since the original projects have high resolution. This process is carried out using the sliding window method, the algorithm for which is presented [here](https://github.com/SFStefenon/Digital_ED/blob/main/Sliding%20Window/Sliding%20Window%20Compute.py).
+The first step in using deep learning-based models for object detection is to reduce the dimensions of the drawings since the original projects have high resolution. This process is carried out using the sliding window method, the algorithm for which is presented [here](https://github.com/SFStefenon/Digital_ED/blob/main/Sliding%20Window/Sliding%20Window%20Compute.py).
 
 ---
 
