@@ -26,7 +26,7 @@ import cv2
 import random
 
 # Main path
-main = str('C:/Users/ffriz/Dropbox/FBK/')
+main = str('C:/Users/')
 path_main = str('../PrePro/Noise_data/Done_Experiment_1/')
    
 ###############################################################################
