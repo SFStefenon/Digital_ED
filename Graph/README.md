@@ -2,11 +2,6 @@ The graph is built in this project to connect symbols, thus reproducing the elec
 
 ![a](https://github.com/user-attachments/assets/592b156e-f2d7-4171-93fd-1b2581b23c0c)
 
-
-
-![a](https://github.com/user-attachments/assets/eae214e7-bddb-478d-9633-24c548859bc8)
-
-
 ---
 
 Wrote by Dr. **Stefano Frizzo Stefenon**
