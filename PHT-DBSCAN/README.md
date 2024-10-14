@@ -4,6 +4,8 @@ An example of the results of using the method is presented below.
 
 ![b](https://github.com/user-attachments/assets/3778928c-32eb-4061-8e42-22ef567fcac0)
 
+Taking into account the segments reconstructed by PHT-DBSCAN and the YOLO bounding boxes, a [graph](https://github.com/SFStefenon/Digital_ED/tree/main/Graph) is constructed based on the distances between segments and specific symbols and rules for the considered engineering drawings.
+
 ---
 
 Wrote by Dr. **Stefano Frizzo Stefenon**
