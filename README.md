@@ -24,7 +24,7 @@ To compare the DBSCAN clustering, the KMeans, agglomerative clustering, and orde
 
 Considering the detected lines, orthogonal lines are merged and identifiers (ID) are used to label them. Using the IDs a graph is built to connect lines to symbols having a graph of the electrical connections. Based on the coordinates from YOLO and the electrical connections from the graph an output that can be read by [NORMA Tool](https://doi.org/10.1007/978-3-030-99524-9_7) is created. The algorithm that identifies the lines, aggregates the lines based on rules to create the graph and generates the readable output is [here](https://github.com/SFStefenon/Digital_ED/blob/main/PHT-DBSCAN/Line_Detection_Graph_Readable_Ouput.py). An example of the results of the proposed method is presented below:
 
-![image](https://github.com/user-attachments/assets/8b3ca5e4-b91b-4161-9482-cc561cb5e319)
+![a](https://github.com/user-attachments/assets/8e703fba-21ad-4f2c-816c-ecee76cc028f)
 
 To perform a complete digitization of engineering drawings, white rectangles are initially drawn over the objects under consideration (symbols, labels, and specifiers), resulting in an image that only has the lines to be detected (without components). PHT is then applied to detect segments, and since this method detects small segments (dashed lines), DBSCAN is used to redraw the lines. Identifiers are assigned to each line and object, and based on geometric and design rules, a Graph is constructed as links from symbols to lines, and then symbols to symbols. The Graph of symbols is used to create a readable output for Norma, the graphical interface used to manage rail network projects.
 
