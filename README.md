@@ -16,7 +16,7 @@ YOLO is used for object detection considering a custom dataset (symbols, labels,
 
 ---
 
-For segment detection the PHT is used, considering that the detected segments are dashed, DBSCAN is used for clustering the segments to create a continuous line.
+For segment detection the PHT is applied, considering that the detected segments are dashed, DBSCAN is used for clustering the segments to create a continuous line.
 For PHT the preprocessing techniques canny edge detection, Sobel edge detection, binarization threshold, Otsu Riddler-Calvard threshold, or adaptive threshold can be used.
 To compare the DBSCAN clustering, the KMeans, agglomerative clustering, and ordering points to identify the clustering structure (OPTICS) can be considered.
 
