@@ -24,7 +24,7 @@ Considering the detected lines, orthogonal lines are merged and identifiers (ID)
 
 ![a](https://github.com/user-attachments/assets/ef58c561-96ca-44be-8b06-791539d81da4)
 
-To summarize, to perform a complete digitization of engineering drawings, white rectangles are initially drawn over the objects under consideration, resulting in an image that only has the lines to be detected (without components). PHT is then applied to detect segments, and since this method detects small segments (dashed lines), DBSCAN is used to redraw the lines. Identifiers are assigned to each line and object, and based on geometric and design rules, a graph is constructed as links from symbols to lines, and then symbols to symbols. The graph of symbols is used to create a readable output for Norma, the graphical interface used to manage rail network projects.
+**In short, to perform a complete digitization of engineering drawings, white rectangles are initially drawn over the objects under consideration, resulting in an image that only has the lines to be detected (without components). PHT is then applied to detect segments, and since this method detects small segments (dashed lines), DBSCAN is used to redraw the lines. Identifiers are assigned to each line and object, and based on geometric and design rules, a graph is constructed as links from symbols to lines, and then symbols to symbols. The graph of symbols is used to create a readable output for Norma, the graphical interface used to manage rail network projects.**
 
 ---
 
