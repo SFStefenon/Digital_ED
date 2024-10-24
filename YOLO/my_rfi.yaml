@@ -1,0 +1,5 @@
+path: datasets/my_rfi # path to reach the `my_rfi.yaml` file 
+train: train.txt # List of all images that need to be loaded to train the model.
+val: val.txt # List of all images that need to be loaded to validate the model.
+nc: 10 # number of classes
+names: ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9'] # name of the classes
