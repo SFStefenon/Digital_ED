@@ -94,7 +94,7 @@ model.train(data=dataset)
 
 This file is going to be in the data folder inside the YOLO model.
 
-Depending on how you decided to organize the data the `data.yaml`, it will look like this:
+Depending on how you decided to organize the data the `my_rfi.yaml`, it will look like this ([example](https://github.com/SFStefenon/Digital_ED/blob/main/YOLO/my_rfi.yaml)):
 ```
 path: ../dataset
 train: train/images
