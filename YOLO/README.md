@@ -8,14 +8,15 @@ Specially focused on object detection of the components (symbols, labels, and sp
 
 YOLO is an algorithm that detects and recognizes objects in pictures. YOLO employs convolutional neural networks (CNN) to detect objects, the algorithm requires only a single forward propagation through a neural network to detect objects. This means that prediction in the entire image is done in a single algorithm run. The CNN is used to predict various class probabilities and bounding boxes.
 
-There are many variations of YOLO, some of the latest developed by [Ultralytics](https://github.com/ultralytics/ultralytics). In the latest version, the last letter refers to the size of the model (nano, small, medium, large, and extra large). The published results show that larger models may have better precision, and small models are faster. This trade-off makes the variation of the size of the model became important depending on the application.
+There are many variations of YOLO, some of the latest developed by [Ultralytics](https://github.com/ultralytics/ultralytics). In the latest version, the last letter refers to the size of the model (nano, small, medium, large, and extra large). The published results show that larger models may have better precision, and small models are faster. This trade-off makes the variation of the size of the model important depending on the application.
 
 ```
 git clone https://github.com/ultralytics/yolov5  # clone
 
 cd yolov5
 
-pip install -r requirements.txt  # install```
+pip install -r requirements.txt  # install
+```
 
 ## Create the Environment
 
