@@ -11,7 +11,9 @@ YOLO is an algorithm that detects and recognizes objects in pictures. YOLO emplo
 There are many variations of YOLO, some of the latest developed by [Ultralytics](https://github.com/ultralytics/ultralytics). In the latest version, the last letter refers to the size of the model (nano, small, medium, large, and extra large). The published results show that larger models may have better precision, and small models are faster. This trade-off makes the variation of the size of the model became important depending on the application.
 
 `git clone https://github.com/ultralytics/yolov5  # clone
+
 cd yolov5
+
 pip install -r requirements.txt  # install`
 
 ## Create the Environment
