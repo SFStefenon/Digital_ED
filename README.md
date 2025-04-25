@@ -30,6 +30,14 @@ Considering the detected lines, orthogonal lines are merged and identifiers (ID)
 
 Since the cropouts have 640 by 640 pixels, it is necessary to join the segments and define the position of the objects-based cropouts from the original image, this is done by this [algorithm](https://github.com/SFStefenon/Digital_ED/blob/main/Graph/Load_Complete_Graph_Full_Image_Annotations_and_Segments.py). The complete graph that combines all electrical connections is available [here](https://github.com/SFStefenon/Digital_ED/blob/main/Graph/Create_Complete_Graph_Full_Image_to_Save_Annotations_and_Segments.py).  
 
+---
+
+Additional information can be found at the **[Original Paper](https://doi.org/10.1016/j.eswa.2025.127532)**.
+
+Stefenon, S. F., Cristoforetti, M., Cimatti, A. Automatic digitalization of railway interlocking systems engineering drawings based on hybrid machine learning methods, Expert Systems with Applications, vol. 281, p. 127532, 2025.
+
+BibTeX:
+`@article{stefenon2025automatic, title={Automatic digitalization of railway interlocking systems engineering drawings based on hybrid machine learning methods}, author={Stefenon, Stefano Frizzo and Cristoforetti, Marco and Cimatti, Alessandro}, journal={Expert Systems with Applications}, pages={127532}, volume={281}, year={2025}, doi={10.1016/j.eswa.2025.127532}, publisher={Elsevier}}`
 
 ---
 
@@ -37,4 +45,4 @@ Wrote by Dr. **Stefano Frizzo Stefenon**
 
 Fondazione Bruno Kessler
 
-Trento, Italy, October 10, 2024
+Trento, Italy, 2025
