@@ -37,7 +37,7 @@ Additional information can be found at the **[Original Paper](https://doi.org/10
 Stefenon, S. F., Cristoforetti, M., Cimatti, A. Automatic digitalization of railway interlocking systems engineering drawings based on hybrid machine learning methods, Expert Systems with Applications, vol. 281, p. 127532, 2025.
 
 BibTeX:
-`@article{stefenon2025automatic, title={Automatic digitalization of railway interlocking systems engineering drawings based on hybrid machine learning methods}, author={Stefenon, Stefano Frizzo and Cristoforetti, Marco and Cimatti, Alessandro}, journal={Expert Systems with Applications}, pages={127532}, volume={281}, year={2025}, doi={10.1016/j.eswa.2025.127532}, publisher={Elsevier}}`
+`@article{stefenon2025, title={Automatic digitalization of railway interlocking systems engineering drawings based on hybrid machine learning methods}, author={Stefenon, Stefano Frizzo and Cristoforetti, Marco and Cimatti, Alessandro}, journal={Expert Systems with Applications}, pages={127532}, volume={281}, year={2025}, doi={10.1016/j.eswa.2025.127532}}`
 
 ---
 
